@@ -6,7 +6,7 @@
 
 .container {
   display: flex;
-  height: 65vh;
+  height: 100vh;
   background-color: lightgrey;
   justify-content: space-between;
   flex-direction: row;
@@ -21,4 +21,11 @@
   border-radius: 10px;
   background-color: white;
   box-shadow: rgba(70, 70, 70, 0.2) 2px 2px 2px 1px, rgba(70, 70, 70, 0.2) 2px 2px 2px 1px;
+  text-align: center;
+  display: flex;
+}
+
+.fas {
+  margin: auto;
+  font-size:35px;
 }
