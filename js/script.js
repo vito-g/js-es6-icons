@@ -25,22 +25,22 @@ Per la terza milestone un po' di codice l'abbiamo già visto in classe. Approcci
 - Definire un array di oggetti; ogni oggetto rappresenta un'icona, che è caratterizzata da: nome, prefisso, tipo e famiglia.*/
 
 const icons = [
-  {'name' : 'cat', 'prefix': 'fas', 'tipo': 'fa-cat', 'family': 'animal'},
-  {'name' : 'crow', 'prefix': 'fas', 'tipo': 'fa-crow', 'family': 'animal'},
-  {'name' : 'dog', 'prefix': 'fas', 'tipo': 'fa-dog', 'family': 'animal'},
-  {'name' : 'dove', 'prefix': 'fas', 'tipo': 'fa-dove', 'family': 'animal'},
-  {'name' : 'dragon', 'prefix': 'fas', 'tipo': 'fa-dragon', 'family': 'animal'},
-  {'name' : 'horse', 'prefix': 'fas', 'tipo': 'fa-horse', 'family': 'animal'},
-  {'name' : 'hippo', 'prefix': 'fas', 'tipo': 'fa-hippo', 'family': 'animal'},
-  {'name' : 'fish', 'prefix': 'fas', 'tipo': 'fa-fish', 'family': 'animal'},
-  {'name' : 'carrot', 'prefix': 'fas', 'tipo': 'fa-carrot', 'family': 'vegetable'},
-  {'name' : 'apple-alt', 'prefix': 'fas', 'tipo': 'fa-apple-alt', 'family': 'vegetable'},
-  {'name' : 'lemon', 'prefix': 'fas', 'tipo': 'fa-lemon', 'family': 'vegetable'},
-  {'name' : 'pepper-hot', 'prefix': 'fas', 'tipo': 'fa-pepper-hot', 'family': 'vegetable'},
-  {'name' : 'user-astronaut', 'prefix': 'fas', 'tipo': 'fa-user-astronaut', 'family': 'user'},
-  {'name' : 'user-graduate', 'prefix': 'fas', 'tipo': 'fa-user-graduate', 'family': 'user'},
-  {'name' : 'user-ninja', 'prefix': 'fas', 'tipo': 'fa-user-ninja', 'family': 'user'},
-  {'name' : 'user-secret', 'prefix': 'fas', 'tipo': 'fa-user-secret', 'family': 'user'}
+  {'name' : 'cat', 'prefix': 'fa-', 'family': 'fas', 'type': 'animal'},
+  {'name' : 'crow', 'prefix': 'fa-', 'family': 'fas', 'type': 'animal'},
+  {'name' : 'dog', 'prefix': 'fa-', 'family': 'fas', 'type': 'animal'},
+  {'name' : 'dove', 'prefix': 'fa-', 'family': 'fas', 'type': 'animal'},
+  {'name' : 'dragon', 'prefix': 'fa-', 'family': 'fas', 'type': 'animal'},
+  {'name' : 'horse', 'prefix': 'fa-', 'family': 'fas', 'type': 'animal'},
+  {'name' : 'hippo', 'prefix': 'fa-', 'family': 'fas', 'type': 'animal'},
+  {'name' : 'fish', 'prefix': 'fa-', 'family': 'fas', 'type': 'animal'},
+  {'name' : 'carrot', 'prefix': 'fa-', 'family': 'fas', 'type': 'vegetable'},
+  {'name' : 'apple-alt', 'prefix': 'fa-', 'family': 'fas', 'type': 'vegetable'},
+  {'name' : 'lemon', 'prefix': 'fa-', 'family': 'fas', 'type': 'vegetable'},
+  {'name' : 'pepper-hot', 'prefix': 'fa-', 'family': 'fas', 'type': 'vegetable'},
+  {'name' : 'user-astronaut', 'prefix': 'fa-', 'family': 'fas', 'type': 'user'},
+  {'name' : 'user-graduate', 'prefix': 'fa-', 'family': 'fas', 'type': 'user'},
+  {'name' : 'user-ninja', 'prefix': 'fa-', 'family': 'fas', 'type': 'user'},
+  {'name' : 'user-secret', 'prefix': 'fa-', 'family': 'fas', 'type': 'user'}
 ];
 
 console.log(icons);
@@ -49,7 +49,7 @@ console.log(icons);
 -Utilizzando la funzione forEach e il template literal, visualizzare in pagina tutte le icone con il proprio nome.*/
 /*N.B.: Il forEach() è un metodo che esegue una funzione (anonima di tipo ARROW), applicandola a ciascun elemento dell'array.*/
 
-//Questo ciclo stampa inevitabimente l'ultimo elemento ciclato
+//Questo ciclo stampa inevitabilmente l'ultimo elemento ciclato
 for (let i= 0; i < icons.length; i++) {
   // let flag = false;
   const elBox = document.getElementsByClassName('box')[i];
@@ -59,13 +59,31 @@ for (let i= 0; i < icons.length; i++) {
     elBox.innerHTML = `
     <div class="${element.prefix}">
       <div >
-        <i class="${element.prefix} ${element.tipo}"></i>
+        <i class="${element.prefix} ${element.type}"></i>
       </div>
         ${element.name}
     </div>
     `
 
   });
+
+
+  // Altra prova che stampa in pagina solo la prima icona e il suo nome(con il let flag = false sotto il for canonico). Ma l'uso della flag mi fa uscire subito dal ciclo dopo la prima iterazione!!!
+
+  // icons.forEach((element) => {
+  //   if (flag === false) {
+  //     elBox.innerHTML = `
+  //     <div class="${element.prefix}">
+  //       <div >
+  //         <i class="${element.prefix} ${element.type}"></i>
+  //       </div>
+  //         ${element.name}
+  //     </div>
+  //     `
+  //
+  //   }
+  //   flag = true;
+  // });
 
 
 }
