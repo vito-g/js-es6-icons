@@ -54,6 +54,10 @@ icons.forEach((element) => {
 })
 console.log(typeList);
 
+//Andiamo a crearci una cost in cui salvare la posizione dell'elemento select del DOM di modo da strutturare poi,in esso, a mezzo javascript le opzioni che lo riguarderanno e che ho salvato attraverso il forEach applicato all'array icons
+
+const elSelector = document.getElementById('selector');
+
 
 
 
