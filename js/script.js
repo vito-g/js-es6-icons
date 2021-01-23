@@ -44,7 +44,7 @@ const icons = [
 ];
 
 console.log(icons);
-
+// ------------------------------------------------------------------------
 //Creo un array i cui elementi siano rappresentati unicamente dai valori associati alla chiave type presente negli oggetti dell'array icons.
 const typeList = [];
 icons.forEach((element) => {
@@ -57,14 +57,26 @@ console.log(typeList);
 //Andiamo a crearci una cost in cui salvare la posizione dell'elemento "select" del DOM di modo da strutturare poi,in esso, a mezzo javascript le opzioni che lo riguarderanno e che ho salvato attraverso il forEach applicato all'array icons:
 const elSelector = document.getElementById('selector');
 
+
+
 /*Il forEach() sottostante eseguirà una funzione (anonima di tipo ARROW), su ciascun elemento (valori di type di icons) dell'array "typeList", di modo che nel DOM si stampino tutti i tag "option" all'interno dell'elemento "select" di id "selector" salvato in "elSelector" che abbiano come valore e contenuto proprio l'elemento.*/
 typeList.forEach((element) => {  // element è la stringa type
   elSelector.innerHTML += `
     <option value="${element}">${element}</option>
   `
 });
-
-
+// ---------------------------Che più compatto sarebbe:-------------------
+// const typeList = [];
+// const elSelector = document.getElementById('selector');
+// icons.forEach((element) => {
+//   if(!typeList.includes(element.type)) {
+//     typeList.push(element.type);
+//     elSelector.innerHTML += `
+//       <option value="${element.type}">${element.type}</option>
+//     `
+//   }
+// })
+// ------------------------------END Compattazione------------------------
 
 
 
@@ -111,3 +123,32 @@ typeList.forEach((element) => {  // element è la stringa type
 //
 //
 // }
+// ----------------------------------------------------------------
+//Voglio fare in modo che i box popolino la pagina in ragione dell'opzione selezionata:
+
+
+//a mezzo JQUERY, opportunamente caricato nell'head del file index:
+const elementSelector = $('#selector');
+const elContainer = document.getElementsByClassName('container')[0];
+
+elementSelector.change(function() {
+  let valore = $(this).val();
+
+  elContainer.innerHTML = ``;// Mi consente di resettare il risultato di stampa in pagina dovuto alla scelta di selezione precedente
+  const arrayPerType = icons.filter((element)=>{
+  return element.type === valore
+  });
+
+  console.log(arrayPerType);
+  arrayPerType.forEach((element) => {  // element è la stringa type
+    elContainer.innerHTML += `
+    <div>
+      <div class="box">
+      <div class="${element.family}">
+      pippo
+      </div>
+      </div>
+    </div>
+    `
+  });
+});
