@@ -145,10 +145,16 @@ elementSelector.change(function() {
     <div>
       <div class="box">
       <div class="${element.family}">
-      pippo
+        <i class="${element.family} ${element.prefix}${element.name}"></i>
       </div>
       </div>
     </div>
     `
   });
 });
+
+
+// <div >
+//   <i class="${element.family} ${element.prefix}${element.name}"></i>
+// </div>
+// ${element.name}
