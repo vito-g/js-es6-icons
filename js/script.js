@@ -49,6 +49,7 @@ console.log(icons);
 -Utilizzando la funzione forEach e il template literal, visualizzare in pagina tutte le icone con il proprio nome.*/
 /*N.B.: Il forEach() è un metodo che esegue una funzione (anonima di tipo ARROW), applicandola a ciascun elemento dell'array.*/
 
+//Questo ciclo stampa inevitabimente l'ultimo elemento ciclato
 for (let i= 0; i < icons.length; i++) {
   // let flag = false;
   const elBox = document.getElementsByClassName('box')[i];
