@@ -102,33 +102,33 @@ typeList.forEach((element) => {  // element è la stringa type
 //     `
 //
 //   });
-//
+//}
 //
 //----------------------eliminando i div di classe box devo rifare e naturalmente correggere la porzione di codice del MILESTONE 1---
 /*Milestone 1 - STEP 2
 -Utilizzando la funzione forEach e il template literal, visualizzare in pagina tutte le icone con il proprio nome.*/
 /*N.B.: Il forEach() è un metodo che esegue una funzione (anonima di tipo ARROW), applicandola a ciascun elemento dell'array.*/
-for (let i= 0; i < icons.length; i++) {
-//   // let flag = false;
-  const elContainer = document.getElementsByClassName('container')[0];
-//
-//   /*Dunque, applicando il forEach all'array di oggetti "icons" (sintassi: icons.forEach())  posso andare a ciclare su ogni oggetto dell'array*/
-  icons.forEach((element) => {
-    elContainer.innerHTML += `
-    <div>
-      <div class="box">
+
+
+const elContainer = document.getElementsByClassName('container')[0];
+
+/*Dunque, applicando il forEach all'array di oggetti "icons" (sintassi: icons.forEach())  posso andare a ciclare su ogni oggetto dell'array*/
+icons.forEach((element) => {
+  elContainer.innerHTML += `
+  <div>
+    <div class="box">
       <div class="${element.family}">
         <i class="${element.family} ${element.prefix}${element.name}"></i>
         <div class="text">
-        ${element.name}
+          ${element.name}
         </div>
       </div>
-      </div>
     </div>
-    `
+  </div>
+  `
 
-  });
-}
+});
+
 //
 //--------------------------------------------------------------------------------
 //   // Altra prova che stampa in pagina solo la prima icona e il suo nome(con il let flag = false sotto il for canonico). Ma l'uso della flag mi fa uscire subito dal ciclo dopo la prima iterazione!!!
@@ -160,7 +160,7 @@ for (let i= 0; i < icons.length; i++) {
 const elementSelector = $('#selector');
 
 //Salvo nella const "elContainer" la posizione nel DOM relativa all'elemento di classe "container" in cui andrò poi a stampare i miei box.
-const elContainer = document.getElementsByClassName('container')[0];
+// const elContainer = document.getElementsByClassName('container')[0];
 
 
 //Attraverso il metodo CHANGE eseguo una FX che applico  all'elemento del DOM "select" di id "selector"(salvato nella costante elementSelector). Vado, cioè, a salvare, con la funzione, nella "let" di nome valore, il value dell'option selezionata (identificata dalla parola chiave "this"- con JQUERY $(this)) di select.
