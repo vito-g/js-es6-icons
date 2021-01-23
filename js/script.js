@@ -19,3 +19,28 @@ Ragionate per singola milestone.
 Leggetevi prima il tutto giusto per avere chiara l'idea sulla nostra applicazione, ma poi stop.
 Prendete quindi solo la prima milestone e conquistatela senza più neanche pensare alle successive. E poi caffettino, e passate alla seconda.
 Per la terza milestone un po' di codice l'abbiamo già visto in classe. Approcciate con curiosità e creatività il tutto.*/
+// -----------------------------------------------------------------------------------------------------------
+
+/*Milestone 1 - STEP 1
+- Definire un array di oggetti; ogni oggetto rappresenta un'icona, che è caratterizzata da: nome, prefisso, tipo e famiglia.*/
+
+const icons = [
+  {'name' : 'cat', 'prefix': 'fas', 'tipo': 'fa-cat', 'family': 'animal'},
+  {'name' : 'crow', 'prefix': 'fas', 'tipo': 'fa-crow', 'family': 'animal'},
+  {'name' : 'dog', 'prefix': 'fas', 'tipo': 'fa-dog', 'family': 'animal'},
+  {'name' : 'dove', 'prefix': 'fas', 'tipo': 'fa-dove', 'family': 'animal'},
+  {'name' : 'dragon', 'prefix': 'fas', 'tipo': 'fa-dragon', 'family': 'animal'},
+  {'name' : 'horse', 'prefix': 'fas', 'tipo': 'fa-horse', 'family': 'animal'},
+  {'name' : 'hippo', 'prefix': 'fas', 'tipo': 'fa-hippo', 'family': 'animal'},
+  {'name' : 'fish', 'prefix': 'fas', 'tipo': 'fa-fish', 'family': 'animal'},
+  {'name' : 'carrot', 'prefix': 'fas', 'tipo': 'fa-carrot', 'family': 'vegetable'},
+  {'name' : 'apple-alt', 'prefix': 'fas', 'tipo': 'fa-apple-alt', 'family': 'vegetable'},
+  {'name' : 'lemon', 'prefix': 'fas', 'tipo': 'fa-lemon', 'family': 'vegetable'},
+  {'name' : 'pepper-hot', 'prefix': 'fas', 'tipo': 'fa-pepper-hot', 'family': 'vegetable'},
+  {'name' : 'user-astronaut', 'prefix': 'fas', 'tipo': 'fa-user-astronaut', 'family': 'user'},
+  {'name' : 'user-graduate', 'prefix': 'fas', 'tipo': 'fa-user-graduate', 'family': 'user'},
+  {'name' : 'user-ninja', 'prefix': 'fas', 'tipo': 'fa-user-ninja', 'family': 'user'},
+  {'name' : 'user-secret', 'prefix': 'fas', 'tipo': 'fa-user-secret', 'family': 'user'}
+];
+
+console.log(icons)
