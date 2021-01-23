@@ -108,24 +108,27 @@ typeList.forEach((element) => {  // element è la stringa type
 /*Milestone 1 - STEP 2
 -Utilizzando la funzione forEach e il template literal, visualizzare in pagina tutte le icone con il proprio nome.*/
 /*N.B.: Il forEach() è un metodo che esegue una funzione (anonima di tipo ARROW), applicandola a ciascun elemento dell'array.*/
-
-//Questo ciclo stampa inevitabilmente l'ultimo elemento ciclato
-// for (let i= 0; i < icons.length; i++) {
+for (let i= 0; i < icons.length; i++) {
 //   // let flag = false;
-//   const elBox = document.getElementsByClassName('box')[i];
+  const elContainer = document.getElementsByClassName('container')[0];
 //
 //   /*Dunque, applicando il forEach all'array di oggetti "icons" (sintassi: icons.forEach())  posso andare a ciclare su ogni oggetto dell'array*/
-//   icons.forEach((element) => {
-//     elBox.innerHTML = `
-//     <div class="${element.family}">
-//       <div >
-//         <i class="${element.family} ${element.prefix}${element.name}"></i>
-//       </div>
-//         ${element.name}
-//     </div>
-//     `
-//
-//   });
+  icons.forEach((element) => {
+    elContainer.innerHTML += `
+    <div>
+      <div class="box">
+      <div class="${element.family}">
+        <i class="${element.family} ${element.prefix}${element.name}"></i>
+        <div class="text">
+        ${element.name}
+        </div>
+      </div>
+      </div>
+    </div>
+    `
+
+  });
+}
 //
 //--------------------------------------------------------------------------------
 //   // Altra prova che stampa in pagina solo la prima icona e il suo nome(con il let flag = false sotto il for canonico). Ma l'uso della flag mi fa uscire subito dal ciclo dopo la prima iterazione!!!
@@ -148,6 +151,8 @@ typeList.forEach((element) => {  // element è la stringa type
 //
 // }
 // ----------------------------------------------------------------
+
+// -----------------MILESTONE 3 da finire----------------------------------
 //Voglio fare in modo che i box popolino la pagina in ragione dell'opzione selezionata:
 
 
