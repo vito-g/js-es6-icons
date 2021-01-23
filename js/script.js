@@ -146,6 +146,9 @@ elementSelector.change(function() {
       <div class="box">
       <div class="${element.family}">
         <i class="${element.family} ${element.prefix}${element.name}"></i>
+        <div>
+        ${element.name}
+        </div>
       </div>
       </div>
     </div>
