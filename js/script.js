@@ -127,30 +127,7 @@ icons.forEach((element) => {
   </div>
   `
 
-});
-
-//
-//--------------------------------------------------------------------------------
-//   // Altra prova che stampa in pagina solo la prima icona e il suo nome(con il let flag = false sotto il for canonico). Ma l'uso della flag mi fa uscire subito dal ciclo dopo la prima iterazione!!!
-//
-//   // icons.forEach((element) => {
-//   //   if (flag === false) {
-//   //     elBox.innerHTML = `
-//   //     <div class="${element.prefix}">
-//   //       <div >
-//   //         <i class="${element.prefix} ${element.type}"></i>
-//   //       </div>
-//   //         ${element.name}
-//   //     </div>
-//   //     `
-//   //
-//   //   }
-//   //   flag = true;
-//   // });
-//
-//
-// }
-// ----------------------------------------------------------------
+}); 
 
 // -----------------MILESTONE 3 da finire----------------------------------
 //Voglio fare in modo che i box popolino la pagina in ragione dell'opzione selezionata:
