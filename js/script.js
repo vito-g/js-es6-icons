@@ -129,6 +129,8 @@ typeList.forEach((element) => {  // element è la stringa type
 
 //a mezzo JQUERY, opportunamente caricato nell'head del file index:
 const elementSelector = $('#selector');
+
+//Salvo nella const "elContainer" la posizione nel DOM relativa all'elemento di classe "container" in cui andrò poi a stampare i miei box.
 const elContainer = document.getElementsByClassName('container')[0];
 
 
