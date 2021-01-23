@@ -50,17 +50,17 @@ console.log(icons);
 /*N.B.: Il forEach() è un metodo che esegue una funzione (anonima di tipo ARROW), applicandola a ciascun elemento dell'array.*/
 
 for (let i= 0; i < icons.length; i++) {
-  let flag = false;
+  // let flag = false;
   const elBox = document.getElementsByClassName('box')[i];
 
   /*Dunque, applicando il forEach all'array di oggetti "icons" (sintassi: icons.forEach())  posso andare a ciclare su ogni oggetto dell'array*/
   icons.forEach((element) => {
     elBox.innerHTML = `
-    <div>
-      <div>
+    <div class="${element.prefix}">
+      <div >
         <i class="${element.prefix} ${element.tipo}"></i>
       </div>
-      ${element.name}
+        ${element.name}
     </div>
     `
 

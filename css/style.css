@@ -25,7 +25,19 @@
   display: flex;
 }
 
-.fas {
+/* .flex {
+  display: flex;
+} */
+
+.fas  {
   margin: auto;
+  /* font-size: 35px; */
+}
+
+.fas i {
   font-size: 35px;
 }
+
+/* .text {
+  font-size: 10px;
+} */
