@@ -131,15 +131,22 @@ typeList.forEach((element) => {  // element è la stringa type
 const elementSelector = $('#selector');
 const elContainer = document.getElementsByClassName('container')[0];
 
+
+//Attraverso il metodo CHANGE eseguo una FX che applico  all'elemento del DOM "select" di id "selector"(salvato nella costante elementSelector). Vado, cioè, a salvare, con la funzione, nella "let" di nome valore, il value dell'option selezionata (identificata dalla parola chiave "this"- con JQUERY $(this)) di select.
 elementSelector.change(function() {
   let valore = $(this).val();
 
   elContainer.innerHTML = ``;// Mi consente di resettare il risultato di stampa in pagina dovuto alla scelta di selezione precedente
+
+
+  //Creo un array inserendo in esso unicamente gli elementi di icons che hanno type di valore animal
   const arrayPerType = icons.filter((element)=>{
   return element.type === valore
   });
 
   console.log(arrayPerType);
+
+  /*Vado a ciclare l'array creato di modo che per ciascun valore di type ,selezionato attraverso il select, stampi in pagina i box e gli elemnti relativi a quel valore di type*/
   arrayPerType.forEach((element) => {  // element è la stringa type
     elContainer.innerHTML += `
     <div>
@@ -155,9 +162,3 @@ elementSelector.change(function() {
     `
   });
 });
-
-
-// <div >
-//   <i class="${element.family} ${element.prefix}${element.name}"></i>
-// </div>
-// ${element.name}
