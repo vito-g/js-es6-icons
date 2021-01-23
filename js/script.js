@@ -165,7 +165,7 @@ elementSelector.change(function() {
   elContainer.innerHTML = ``;// Mi consente di resettare il risultato di stampa in pagina dovuto alla scelta di selezione precedente
 
 
-  //Creo un array inserendo in esso unicamente gli elementi di icons che hanno type di valore animal
+  //Creo un array inserendo in esso unicamente gli elementi di icons che hanno type di valore uguale
   const arrayPerType = icons.filter((element)=>{
   return element.type === valore
   });
