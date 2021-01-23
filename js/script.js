@@ -54,9 +54,15 @@ icons.forEach((element) => {
 })
 console.log(typeList);
 
-//Andiamo a crearci una cost in cui salvare la posizione dell'elemento select del DOM di modo da strutturare poi,in esso, a mezzo javascript le opzioni che lo riguarderanno e che ho salvato attraverso il forEach applicato all'array icons
-
+//Andiamo a crearci una cost in cui salvare la posizione dell'elemento "select" del DOM di modo da strutturare poi,in esso, a mezzo javascript le opzioni che lo riguarderanno e che ho salvato attraverso il forEach applicato all'array icons:
 const elSelector = document.getElementById('selector');
+
+/*Il forEach() sottostante eseguirà una funzione (anonima di tipo ARROW), su ciascun elemento (valori di type di icons) dell'array "typeList", di modo che nel DOM si stampino tutti i tag "option" all'interno dell'elemento "select" di id "selector" salvato in "elSelector" che abbiano come valore e contenuto proprio l'elemento.*/
+typeList.forEach((element) => {  // element è la stringa type
+  elSelector.innerHTML += `
+    <option value="${element}">${element}</option>
+  `
+});
 
 
 
