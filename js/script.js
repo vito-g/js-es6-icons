@@ -104,6 +104,30 @@ typeList.forEach((element) => {  // element è la stringa type
 //   });
 //
 //
+//----------------------eliminando i div di classe box devo rifare e naturalmente correggere la porzione di codice del MILESTONE 1---
+/*Milestone 1 - STEP 2
+-Utilizzando la funzione forEach e il template literal, visualizzare in pagina tutte le icone con il proprio nome.*/
+/*N.B.: Il forEach() è un metodo che esegue una funzione (anonima di tipo ARROW), applicandola a ciascun elemento dell'array.*/
+
+//Questo ciclo stampa inevitabilmente l'ultimo elemento ciclato
+// for (let i= 0; i < icons.length; i++) {
+//   // let flag = false;
+//   const elBox = document.getElementsByClassName('box')[i];
+//
+//   /*Dunque, applicando il forEach all'array di oggetti "icons" (sintassi: icons.forEach())  posso andare a ciclare su ogni oggetto dell'array*/
+//   icons.forEach((element) => {
+//     elBox.innerHTML = `
+//     <div class="${element.family}">
+//       <div >
+//         <i class="${element.family} ${element.prefix}${element.name}"></i>
+//       </div>
+//         ${element.name}
+//     </div>
+//     `
+//
+//   });
+//
+//--------------------------------------------------------------------------------
 //   // Altra prova che stampa in pagina solo la prima icona e il suo nome(con il let flag = false sotto il for canonico). Ma l'uso della flag mi fa uscire subito dal ciclo dopo la prima iterazione!!!
 //
 //   // icons.forEach((element) => {
