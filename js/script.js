@@ -50,17 +50,14 @@ console.log(icons);
 
 for (let i= 0; i < icons.length; i++) {
   const elBox = document.getElementsByClassName('box')[i];
-  /*Dunque, applicando il forEach all'array di oggetti "cats" (sintassi: cats.forEach())  posso andare a ciclare su ogni oggetto dell'array*/
+  /*Dunque, applicando il forEach all'array di oggetti "icons" (sintassi: icons.forEach())  posso andare a ciclare su ogni oggetto dell'array*/
   icons.forEach((element) => {
-    // Assegno all'icona di FONTAWESOME, attraverso il tag STYLE inline, il colore che prendo attraverso la proprietà color di ciascun elemento:
     elBox.innerHTML = `
     <div>
-    <i class="fas fa-cat"></i>
-    ${element.name}
+      <i class="${element.prefix} ${element.tipo}"></i>
+      ${element.name}
     </div>
     `
-    // console.log(element.color);
-    // console.log(element.name);
   });
 
 }
