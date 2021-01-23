@@ -43,4 +43,24 @@ const icons = [
   {'name' : 'user-secret', 'prefix': 'fas', 'tipo': 'fa-user-secret', 'family': 'user'}
 ];
 
-console.log(icons)
+console.log(icons);
+// -----------------------------------------------------------------------------------------------------------
+/*Milestone 1 - STEP 2
+-Utilizzando la funzione forEach e il template literal, visualizzare in pagina tutte le icone con il proprio nome.*/
+
+for (let i= 0; i < icons.length; i++) {
+  const elBox = document.getElementsByClassName('box')[i];
+  /*Dunque, applicando il forEach all'array di oggetti "cats" (sintassi: cats.forEach())  posso andare a ciclare su ogni oggetto dell'array*/
+  icons.forEach((element) => {
+    // Assegno all'icona di FONTAWESOME, attraverso il tag STYLE inline, il colore che prendo attraverso la proprietà color di ciascun elemento:
+    elBox.innerHTML = `
+    <div>
+    <i class="fas fa-cat"></i>
+    ${element.name}
+    </div>
+    `
+    // console.log(element.color);
+    // console.log(element.name);
+  });
+
+}
