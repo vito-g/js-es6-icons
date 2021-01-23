@@ -57,9 +57,9 @@ for (let i= 0; i < icons.length; i++) {
   /*Dunque, applicando il forEach all'array di oggetti "icons" (sintassi: icons.forEach())  posso andare a ciclare su ogni oggetto dell'array*/
   icons.forEach((element) => {
     elBox.innerHTML = `
-    <div class="${element.prefix}">
+    <div class="${element.family}">
       <div >
-        <i class="${element.prefix} ${element.type}"></i>
+        <i class="${element.family} ${element.prefix}${element.name}"></i>
       </div>
         ${element.name}
     </div>
