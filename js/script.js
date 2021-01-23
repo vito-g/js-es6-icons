@@ -127,7 +127,36 @@ icons.forEach((element) => {
   </div>
   `
 
-}); 
+});
+// ----------------------MILESTONE 2------------------------------------------
+/*Milestone 2:
+- Definire un array di colori e associare ad ogni tipo di icona un colore.
+- Visualizzare le icone di colore diverso in base al tipo.*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // -----------------MILESTONE 3 da finire----------------------------------
 //Voglio fare in modo che i box popolino la pagina in ragione dell'opzione selezionata:
