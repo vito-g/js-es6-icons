@@ -180,7 +180,12 @@ elementSelector.change(function() {
   return element.type === valore
   });
 
-  /*A questo punto però miresta che la select risponda anche all'opzione ALL*/
+  /*A questo punto, però, mi resta che la select risponda anche all'opzione ALL per la quale ho impostato nell'index.html value uguale a 'all'.*/
+
+  if (valore === 'all') {
+    arrayPerType = icons;
+    console.log('arrayPerType');
+  }
 
   console.log(arrayPerType);
 
