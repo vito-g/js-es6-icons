@@ -135,7 +135,11 @@ icons.forEach((element) => {
 
 const colorArray = ['blue', 'orange', 'red'];
 
+//Quel che mi occorre e l'array di oggetti che abbiano stesso valore di tipo, e ai quali assegnare un colore univoco
 
+let arrayPerType = icons.filter((element)=>{ //(**)
+return element.type === valore
+});
 
 
 
