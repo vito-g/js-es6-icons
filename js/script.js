@@ -135,24 +135,9 @@ icons.forEach((element) => {
 
 const colorArray = ['blue', 'orange', 'red'];
 
-//Quel che mi occorre e l'array di oggetti che abbiano stesso valore di tipo, e ai quali assegnare un colore univoco
+//Quel che mi occorre e l'array che ha per elementi i diversi valori di "type", ritrovabili negli oggetti di "icons",
+//che ho calcolato sopra, nello script, e che ho chiamato typeList.
 
-//Creo, dapprima, il mio array vuoto, che chiamo typeArray, che salverà al suo interno i diversi valori di "type" ritrovabili negli oggetti contenuti nell'array "icons" di partenza.
-
-// const typeArray = [];
-//
-// //Per polpolarlo, in modo univoco, dovrò ciclare il mio array di partenza, "icons", e pushare in esso solo i valori di "type" che non risultino già presenti in esso (o meglio già pushati, durante il ciclo, dalla funzione stessa).
-// //Applico dunque all'array  "icons" il metodo "ForEach" che eseguirà su ciascun elemnto dell'array la funzione ( anonima di tipo arrow) che ha per istruzioni il blocco di codice tra parentesi graffe:
-//
-// icons.forEach((element) => {
-//  if (!typeArray.includes(element.type)) {
-//    typeArray.push(element.type);
-//  }
-//  console.log(element.type);
-// });
-// console.log(typeArray);
-//
-// //In realtà questa operazione la avevo già eseguita sopra nel codice
 
 
 
