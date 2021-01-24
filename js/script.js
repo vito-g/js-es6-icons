@@ -157,7 +157,6 @@ icons.forEach((element) => {
 
 
 
-
 // -----------------MILESTONE 3 da finire----------------------------------
 //Voglio fare in modo che i box popolino la pagina in ragione dell'opzione selezionata:
 
@@ -180,6 +179,8 @@ elementSelector.change(function() {
   const arrayPerType = icons.filter((element)=>{
   return element.type === valore
   });
+
+  /*A questo punto però miresta che la select risponda anche all'opzione ALL*/
 
   console.log(arrayPerType);
 
