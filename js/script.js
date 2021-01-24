@@ -138,6 +138,8 @@ const colorArray = ['blue', 'orange', 'red'];
 //Quel che mi occorre e l'array che ha per elementi i diversi valori di "type", ritrovabili negli oggetti di "icons",
 //che ho calcolato sopra, nello script, e che ho chiamato typeList.
 
+console.log(typeList); // E' l'array che mi occorre
+
 
 
 
