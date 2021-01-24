@@ -137,6 +137,11 @@ const colorArray = ['blue', 'orange', 'red'];
 
 //Quel che mi occorre e l'array di oggetti che abbiano stesso valore di tipo, e ai quali assegnare un colore univoco
 
+//Creo, dapprima, il mio array vuoto che chiamo typeArray che, di volta in volta, salverà al suo interno oggetti che condividono lo stesso valore di "type". Posso tranquillamente trattarlo come una costante, dal momento che ciò che muterà, di volta in volta che l'array viene creato, è il suo contenuto di oggetti e non la sua assegnazione iniziale ad array.
+
+const typeArray = [];
+
+
 
 
 
