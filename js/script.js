@@ -176,11 +176,11 @@ elementSelector.change(function() {
 
 
   //Creo un array inserendo in esso unicamente gli elementi di icons che hanno type di valore uguale
-  const arrayPerType = icons.filter((element)=>{
+  let arrayPerType = icons.filter((element)=>{ //(**)
   return element.type === valore
   });
 
-  /*A questo punto, però, mi resta che la select risponda anche all'opzione ALL per la quale ho impostato nell'index.html value uguale a 'all'.*/
+  /*A questo punto, però, mi resta che la select risponda anche all'opzione ALL per la quale ho impostato nell'index.html value uguale a 'all'. Perchè le tre righe di codice che seguono funzionino, occorre mutare l'arrayPerType da const a let: solo così posso garantirgli una nuova assegnazione--->(**)*/
 
   if (valore === 'all') {
     arrayPerType = icons;
