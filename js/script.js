@@ -152,7 +152,7 @@ icons.forEach((element) => {
 });
 console.log(typeArray);
 
-
+//In realtà questa operazione la avevo già eseguita sopra nel codice
 
 
 
