@@ -140,6 +140,15 @@ const colorArray = ['blue', 'orange', 'red'];
 
 console.log(typeList); // E' l'array che mi occorre
 
+// icons.forEach((element) => {
+//   const indexOfType = typeList.indexOf(element);
+//   console.log(indexOfType);
+//
+//   if (indexOfType != -1) {
+//     element.color = colorArray[indexOfType];
+//     console.log(element.color);
+//   }
+// });
 
 
 
@@ -163,7 +172,7 @@ console.log(typeList); // E' l'array che mi occorre
 
 
 
-// -----------------MILESTONE 3 da finire----------------------------------
+// -----------------MILESTONE 3 ----------------------------------
 //Voglio fare in modo che i box popolino la pagina in ragione dell'opzione selezionata:
 
 
