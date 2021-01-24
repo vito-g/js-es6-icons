@@ -137,10 +137,20 @@ const colorArray = ['blue', 'orange', 'red'];
 
 //Quel che mi occorre e l'array di oggetti che abbiano stesso valore di tipo, e ai quali assegnare un colore univoco
 
-//Creo, dapprima, il mio array vuoto che chiamo typeArray che, di volta in volta, salverà al suo interno oggetti che condividono lo stesso valore di "type". Posso tranquillamente trattarlo come una costante, dal momento che ciò che muterà, di volta in volta che l'array viene creato, è il suo contenuto di oggetti e non la sua assegnazione iniziale ad array.
+//Creo, dapprima, il mio array vuoto, che chiamo typeArray, che salverà al suo interno i diversi valori di "type" ritrovabili negli oggetti contenuti nell'array "icons" di partenza.
 
 const typeArray = [];
 
+//Per polpolarlo, in modo univoco, dovrò ciclare il mio array di partenza, "icons", e pushare in esso solo i valori di "type" che non risultino già presenti in esso (o meglio già pushati, durante il ciclo, dalla funzione stessa).
+//Applico dunque all'array  "icons" il metodo "ForEach" che eseguirà su ciascun elemnto dell'array la funzione ( anonima di tipo arrow) che ha per istruzioni il blocco di codice tra parentesi graffe:
+
+icons.forEach((element) => {
+ if (!typeArray.includes(element.type)) {
+   typeArray.push(element.type);
+ }
+ console.log(element.type);
+});
+console.log(typeArray);
 
 
 
