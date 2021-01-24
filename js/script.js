@@ -184,7 +184,7 @@ elementSelector.change(function() {
 
   if (valore === 'all') {
     arrayPerType = icons;
-    console.log('arrayPerType');
+    console.log(arrayPerType);
   }
 
   console.log(arrayPerType);
