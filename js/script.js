@@ -150,8 +150,19 @@ console.log(typeList); // E' l'array che mi occorre
 //   }
 // });
 
+  icons.forEach((element) => {
+    if (element.type === 'animal') {
+      element.color = 'blue';
+    }
+    if( element.type === 'vegetable') {
+      element.color = 'orange';
+    }
+    if (element.type === 'user') {
+      element.color = 'red';
+    }
+  });
 
-
+  console.log(icons);
 
 
 
@@ -210,7 +221,7 @@ elementSelector.change(function() {
     <div>
       <div class="box">
       <div class="${element.family}">
-        <i class="${element.family} ${element.prefix}${element.name}"></i>
+        <i class="${element.family} ${element.prefix}${element.name}" style="color:${element.color}"></i>
         <div class="text">
         ${element.name}
         </div>
