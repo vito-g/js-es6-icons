@@ -133,7 +133,7 @@ icons.forEach((element) => {
 - Definire un array di colori e associare ad ogni tipo di icona un colore.
 - Visualizzare le icone di colore diverso in base al tipo.*/
 
-const colorArray = ['blue', 'orange', 'red'];
+const colorArray = ['blue', 'orange', 'purple'];
 
 //Quel che mi occorre e l'array che ha per elementi i diversi valori di "type", ritrovabili negli oggetti di "icons",
 //che ho calcolato sopra, nello script, e che ho chiamato typeList.
@@ -158,7 +158,7 @@ console.log(typeList); // E' l'array che mi occorre
       element.color = 'orange';
     }
     if (element.type === 'user') {
-      element.color = 'red';
+      element.color = 'purple';
     }
   });
 
